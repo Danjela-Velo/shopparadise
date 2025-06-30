@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paradise Shop | Collections</title>
+  <link rel="stylesheet" href="/css/collections.css">
+  <link rel="stylesheet" href="/css/home.css">
+<!-- Header -->
+<body id="top">
+  <header class="header">
+    <div class="alert">
+      <div class="container">
+        <p class="alert-text">TRANSPORT FALAS NË SHQIPËRI ME 2 PRODUKTE+</p>
+      </div>
+    </div>
+    <div class="header-top" data-header>
+      <div class="container">
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+        <div class="input-wrapper">
+          <input type="search" name="search" placeholder="Search product" class="search-field">
+          <button class="search-submit" aria-label="search">
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+        <a href="#" class="logo">
+          <img src="/images/logo_1.jpg" width="240" height="40" alt="Shop Paradise" style="max-width:240px;height:auto;" />
+        </a>
+        <div class="header-actions">
+          <button class="header-action-btn" aria-label="user" onclick="window.location.href='user-profile.html'">
+            <ion-icon name="person-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+          </button>
+          <button class="header-action-btn" aria-label="favourite item" onclick="window.location.href='user-profile.html'">
+            <ion-icon name="star-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+            <span class="btn-badge">0</span>
+          </button>
+          <button
+            class="header-action-btn"
+            aria-label="cart item"
+            onclick="window.location.href='cart.html'"
+            type="button"
+          >
+            <ion-icon
+              name="bag-handle-outline"
+              aria-hidden="true"
+              aria-hidden="true"
+            ></ion-icon>
+            <span class="btn-badge"></span>
+          </button>
+        </div>
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li>
+              <a href="/html/home.html" class="navbar-link has-after">Home</a>
+            </li>
+            <li>
+              <a href="/html/collections.html" class="navbar-link has-after">Collection</a>
+            </li>
+            <li>
+              <a href="/html/shop.html" class="navbar-link has-after">Shop</a>
+            </li>
+            <li>
+              <a href="/html/offer.html" class="navbar-link has-after">Offer</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+ 
+    <!-- MOBILE NAVBAR -->
+  <div class="sidebar">
+    <div class="mobile-navbar" data-navbar>
+
+      <div class="wrapper">
+        <a href="#" class="logo">
+          <img src="/images/logo_1.jpg" width="179" height="26" alt="Paradise Shop">
+        </a>
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+        <button
+          class="header-action-btn mobile-cart-btn"
+          aria-label="cart item"
+          onclick="window.location.href='cart.html'"
+          type="button"
+          style="margin-left:auto;display:flex;align-items:center;gap:4px;"
+        >
+          <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+          <span class="btn-badge" id="mobile-cart-count">0</span>
+        </button>
+      </div>
+      <ul class="navbar-list">
+        <li>
+          <a href="/html/home.html" class="navbar-link" data-nav-link>Home</a>
+        </li>
+        <li>
+          <a href="/html/collections.html" class="navbar-link" data-nav-link>Collection</a>
+        </li>
+        <li>
+          <a href="/html/shop.html" class="navbar-link" data-nav-link>Shop</a>
+        </li>
+        <li>
+          <a href="/html/offer.html" class="navbar-link" data-nav-link>Offer</a>
+        </li>
+      </ul>
+    </div>
+    <div class="overlay" data-nav-toggler data-overlay></div>
+  </div>
+
+<!-- Collection -->
+  <section class="section banner" aria-label="banner" data-section>
+        <div class="container">
+          <ul class="banner-list">
+            <li>
+              <div class="banner-card banner-card-1 has-before hover:shine">
+                <p class="card-subtitle">Koleksioni i Ri</p>
+                <h2 class="h2 card-title">Zbulo Modën Tonë të Vjeshtës </h2>
+                <a href="#" class="btn btn-secondary">Eksploro Më Shumë</a>
+                <div class="has-bg-image" style="background-image: url('/images/hero-6.jpg')"></div>
+              </div>
+            </li>
+            <li>
+              <div class="banner-card banner-card-2 has-before hover:shine">
+                <h2 class="h2 card-title">25% ulje në gjithçka!</h2>
+                <p class="card-text">
+                 Moda me një gamë të zgjeruar ngjyrash për të gjithë.
+                </p>
+                <a href="/html/offer.html" class="btn btn-secondary">Bli tani</a>
+                <div class="has-bg-image" style="background-image: url('/images/ph14.jpg')"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    <section class="section__container arrival__container" id="catalogue">
+      <h2 class="section__header">Koleksion i Ri</h2>
+      <div class="arrival__grid">
+        <div class="arrival__card">
+          <div class="arrival__image">
+            <img src="/images/colls-3.jpg" alt="arrival" />
+          </div>
+          <div class="arrival__content">
+            <div>
+              <h4>Fustan veror me ngjyra</h4>
+              <a href="/html/shop.html">Eksploro tani</a>
+            </div>
+            <span><i class="ri-arrow-right-line"></i></span>
+          </div>
+        </div>
+        <div class="arrival__card">
+          <div class="arrival__image">
+            <img src="/images/off.1.webp" alt="arrival" />
+          </div>
+          <div class="arrival__content">
+            <div>
+              <h4>Fustan lino</h4>
+              <a href="#">Eksploro tani</a>
+            </div>
+            <span><i class="ri-arrow-right-line"></i></span>
+          </div>
+        </div>
+        <div class="arrival__card">
+          <div class="arrival__image">
+            <img src="/images/off.2.webp" alt="arrival" />
+          </div>
+          <div class="arrival__content">
+            <div>
+              <h4>Legginges sportive</h4>
+              <a href="#">Eksploro tani</a>
+            </div>
+            <span><i class="ri-arrow-right-line"></i></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section__container arrival__container" id="catalogue">
+      <div class="arrival__grid">
+        <div class="arrival__card">
+          <div class="arrival__image">
+            <img src="/images/off3.jpg" alt="arrival" />
+          </div>
+          <div class="arrival__content">
+            <div>
+              <h4>Bluze black</h4>
+              <a href="#">Eksploro tani</a>
+            </div>
+            <span><i class="ri-arrow-right-line"></i></span>
+          </div>
+        </div>
+        <div class="arrival__card">
+          <div class="arrival__image">
+            <img src="/images/off4.jpeg" alt="arrival" />
+          </div>
+          <div class="arrival__content">
+            <div>
+              <h4>Set pana</h4>
+              <a href="#">Eksploro tani</a>
+            </div>
+            <span><i class="ri-arrow-right-line"></i></span>
+          </div>
+        </div>
+        <div class="arrival__card">
+          <div class="arrival__image">
+            <img src="/images/off.5.jpg" alt="arrival" />
+          </div>
+          <div class="arrival__content">
+            <div>
+              <h4>Fustan yellow</h4>
+              <a href="#">Eksploro tani</a>
+            </div>
+            <span><i class="ri-arrow-right-line"></i></span>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+<!-- Footer -->
+  <footer class="footer" data-section>
+    <div class="container">
+      <div class="footer-top">
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Kompania</p>
+          </li>
+          <li>
+            <p class="footer-list-text">
+              Gjeni një vendndodhje më të afërt me ju. Shihni<a href="https://www.instagram.com/shopparadise.co/" class="link"> Dyqanin tonë</a>
+            </p>
+          </li>
+          <li>
+            <p class="footer-list-text bold">+355 (0)687281527</p>
+          </li>
+          <li>
+            <p class="footer-list-text">paradiseshop.co@gmail.com</p>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Produkte të reja</p>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Më të shiturat</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Best Sellers</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Bundle & Save</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Kartë Dhuratë Online</a>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Informacion</p>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Filloni një Kthim</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Na kontaktoni</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">FAQ për Transportin</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Kushtet & Termat</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Politika e Privatësisë</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <div class="wrapper">
+          <p class="copyright">
+            &copy; 2025 Paradise Shop By Danjela Velo
+          </p>
+          <ul class="social-list">
+            <li>
+              <a href="https://www.instagram.com/shopparadise.co/" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/shopparadise.co/" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/shopparadise.co/" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/shopparadise.co/" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <img src="/images/pay.1.png" width="313" height="28" alt="menyrepagese" class="w-100">
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!-- Lidhja me javascript -->
+  <script src="/js/home.js"></script>
+  <script src="/js/shop.js"></script>
+<!-- Shto popup për njoftim -->
+<div id="cart-popup">Produkti u shtua në shportë!</div>
+
+<!-- Shto dropdown për shportën në navbar (afër butonit të shportës) -->
+<div id="navbar-cart-dropdown">
+  <h4>Shporta</h4>
+  <div id="cart-items"></div>
+  <div>
+    <strong>Total: <span id="cart-total">0L</span></strong>
+  </div>
+</div>
+</body>
+</html>

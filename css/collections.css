@@ -1,0 +1,159 @@
+/* Stilimi i përgjithshëm i seksionit */
+.section__container {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section__header {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 2rem;
+  color: #000;
+}
+
+.section__header::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 15px;
+  background-color: var(--pale-spring-bud);
+  bottom: 5px;
+  left: 135px;
+  z-index: -1;
+  transform: rotate(-5deg);
+  border-radius: 10px;
+}
+
+/* Rreshti i kartave */
+.arrival__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Stili i kartës */
+.arrival__card {
+  background-color: #fff;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.arrival__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.arrival__image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Përmbajtja */
+.arrival__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+}
+
+.arrival__content h4 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.arrival__content a {
+  display: inline-block;
+  color: #555;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 0.3rem;
+  transition: color 0.3s;
+}
+
+.arrival__content a:hover {
+  color: #000;
+}
+
+.arrival__content span i {
+  font-size: 1.4rem;
+  color: #000;
+}
+
+/* Stili për kartat e koleksionit në collections.html */
+.banner-card,
+.banner-card .card-title,
+.banner-card .card-subtitle,
+.banner-card .card-text {
+  color: #fff !important;
+}
+
+.banner-card {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+  padding: 32px 24px 24px 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-card .has-bg-image {
+  filter: brightness(0.7) grayscale(0.1);
+  border-radius: 14px;
+  min-height: 180px;
+  margin-top: 18px;
+}
+
+.banner-card .card-title,
+.banner-card .card-subtitle,
+.banner-card .card-text {
+  color: #222 !important;
+  text-shadow: 0 2px 8px rgba(255, 255, 255, 0.13);
+}
+
+/* Shfaq dropdown-in e shportës kur ka klasën .show */
+#navbar-cart-dropdown.show {
+  display: block !important;
+}
+
+#cart-popup {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #4caf50;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 8px;
+  z-index: 9999;
+  font-size: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#navbar-cart-dropdown {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 320px;
+  z-index: 9998;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#navbar-cart-dropdown > div {
+  margin-top: 10px;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}

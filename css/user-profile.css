@@ -1,0 +1,43 @@
+body {
+  min-height: 100vh;
+  background: url('/images/hero-8.jpg') center center/cover no-repeat fixed;
+  position: relative;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(6px);
+  z-index: 0;
+}
+.modal-content h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.modal-content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.modal-btn {
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  margin: 10px;
+  background-color: #111; 
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.modal-btn:hover {
+  background-color: #333;
+}

@@ -1,0 +1,102 @@
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+  padding: 40px 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  max-width: 100%;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.image-container {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image-container img {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+.discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #2f684f;
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.product-card del {
+  color: #888;
+  margin-right: 10px;
+}
+
+.product-card strong {
+  font-size: 18px;
+  color: black;
+}
+
+.product-card .title {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+/* Dropdown i shportës në navbar */
+#navbar-cart-dropdown {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 320px;
+  z-index: 9998;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+/* Shfaq dropdown-in e shportës kur ka klasën .show */
+#navbar-cart-dropdown.show {
+  display: block !important;
+}
+
+.remove-navbar-btn {
+  margin-left: 10px;
+  background: #f5e9da;
+  color: #222;
+  border: none;
+  padding: 4px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.remove-navbar-btn:hover {
+  background: #e9dcc7;
+}
+
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+    padding: 10px 2px !important;
+  }
+  .product-card {
+    padding: 10px !important;
+  }
+}
